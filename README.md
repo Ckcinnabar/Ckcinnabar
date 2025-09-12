@@ -1,7 +1,7 @@
 # Hi, I'm Kuan-Chen Chen 👋
 
 ## About Me
-🎓 MS candidate in Applied Data Science at University of Florida
+🎓 MS  in Applied Data Science at University of Florida
 
 🚗 Passionate about urban transportation, smart mobility, and self-driving technology
 
