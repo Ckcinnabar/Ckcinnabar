@@ -1,24 +1,35 @@
 # Hi, I'm Kuan-Chen Chen 👋
 
 ## About Me
-🎓 MS  in Applied Data Science at University of Florida
+🎓 MS in Applied Data Science at University of Florida
 
-🚗 Passionate about urban transportation, smart mobility, and self-driving technology
+🤖 Specializing in Deep Learning, NLP/LLM, and Machine Learning applications across diverse domains
 
-📊 Experienced in machine learning, particularly in traffic flow prediction and optimization
+💡 Experienced in developing end-to-end AI solutions—from model training (PyTorch, TensorFlow) to production deployment (Streamlit, Dash)
+
+🚀 Skilled in building intelligent systems including:
+- **LLM Applications:** Fine-tuning GPT models, RAG architectures, vector databases
+- **Deep Learning:** CNN-LSTM for audio/speech processing, computer vision
+- **ML Engineering:** Feature engineering, model optimization, ensemble methods
+- **Full-Stack Development:** Interactive dashboards, API integration, data visualization
+
+🚗 Research background in smart mobility and intelligent transportation systems
 
 🔬 Former researcher at Planning Science Lab, NSYSU
 
 ## 🛠️ Technical Skills
 - **Languages:** Python, R, SQL, C/C++
-- **Visualization:** Power BI, Matplotlib, Seaborn, ggplot2
-- **Areas:** Image Recognition, Deep Learning, Transportation Analytics
+- **ML/DL Frameworks:** PyTorch, TensorFlow, Scikit-learn, LangChain
+- **Data Processing:** Pandas, NumPy, Librosa (Audio), OpenCV
+- **Deployment & Visualization:** Streamlit, Dash, Plotly, Power BI, Matplotlib, Seaborn
+- **Cloud & Database:** Pinecone (Vector DB), API Integration, Cloud Services
+- **Specialized Areas:** NLP/LLM, Speech Processing, Time Series, Computer Vision
 
 ## 🔍 Research Interests
-- Smart City Development
-- Intelligent Transportation Systems
-- Machine Learning in Urban Mobility
-- Traffic Pattern Analysis
+- **AI/ML Applications:** NLP, Speech/Audio Processing, Predictive Modeling
+- **Deep Learning:** Neural Architecture Design, Transfer Learning, Model Optimization
+- **Intelligent Systems:** Smart City Development, Transportation Analytics
+- **Data Science:** Time Series Analysis, Feature Engineering, Large-Scale Data Processing
 
 ## 🚀 Featured Projects
 
