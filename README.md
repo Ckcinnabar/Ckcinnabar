@@ -1,6 +1,6 @@
 # 👋 Hey there, I'm Kuan-Chen Chen
 
-🎓 Currently pursuing my Master of Science in Applied Data Science at the University of Florida, where I'm diving deep into the world of machine learning, deep learning, and artificial intelligence. (Expected December 2025)
+🎓 Currently pursuing my Master of Science in Applied Data Science at the University of Florida, where I'm diving deep into the world of machine learning, deep learning, and artificial intelligence. (Expected May 2026)
 
 🌟 I'm a data scientist and ML engineer with a passion for building intelligent systems that solve real-world problems. From fine-tuning large language models to developing deep learning architectures for audio processing, I thrive on transforming complex data into actionable insights and production-ready solutions.
 
