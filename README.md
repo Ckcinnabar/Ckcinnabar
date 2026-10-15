@@ -1,14 +1,16 @@
 # 👋 Hey there, I'm Kuan-Chen Chen
 
-🎓 Pursuing my Master of Science in Applied Data Science at the University of Florida (Expected May 2026), with a background in Applied Mathematics from National Sun Yat-Sen University — where I graduated as the Valedictorian of my department.
+🎓 I hold a Master of Science in Applied Data Science from the University of Florida (May 2026) and a B.S. in Applied Mathematics from National Sun Yat-Sen University, where I graduated as the Valedictorian of my department.
 
 🌟 I'm a data scientist and ML engineer with hands-on experience building intelligent systems across sports analytics, bioinformatics, and LLM applications. I care about shipping production-ready solutions that deliver real, measurable impact.
 
-🏀 As a Data Scientist Intern with the **Florida Gators Women's Basketball** program, I built an opponent-strength-adjusted player evaluation system (OA-Rating) using XGBoost and SHAP across 120K+ game-level observations, implemented an Elo-based team rating system (ρ = 0.83 vs. NCAA NET), and developed a production R Shiny dashboard for player comparison and scouting — contributing to the team improving from NET 60 to NET 48.
+⚡ I'm an open-source contributor to **NVIDIA NeMo Automodel**, NVIDIA's distributed LLM training library, with 2 merged PRs ([MiniCPM5-1B](https://github.com/NVIDIA-NeMo/Automodel/pull/2341), [Falcon H1](https://github.com/NVIDIA-NeMo/Automodel/pull/2334)) adding 7 fine-tuning recipes (SFT, LoRA) for models from 0.5B to 34B, including LoRA and tensor-parallelism configuration for 34B-scale training.
 
-🔬 At the **Bioinformatics Lab at UF**, I designed a stacking ensemble (XGBoost + LightGBM + Balanced Random Forest) to classify T-cell receptor CDR3 sequences under severe class imbalance (1:23), and developed a biologically-informed data augmentation algorithm using the BLOSUM62 substitution matrix, expanding the minority class 10× to reach ROC-AUC 0.876.
+🏀 As a Data Scientist Intern with the **Florida Gators Women's Basketball** program, I replaced a manually-weighted player evaluation system with OA-Rating, an XGBoost + SHAP model validated against the legacy system (r = 0.78) across 120K+ observations; built an Elo-based team rating system with 83% agreement with NCAA's official national rankings; and shipped a production R Shiny dashboard — contributing to the team's improvement from 60th to 48th nationally.
 
-🤖 On the project side, I've shipped two production versions of **cAIuldron** — an AI-powered recipe app where users photograph ingredients and receive complete recipes with AI-generated images. v1 used CLIP + DETR for ingredient detection and QLoRA fine-tuned Llama 3.2 1B; v2 was rebuilt as a cloud-native system with LangGraph orchestration, Groq Llama 4 Scout 17B for vision, and ChromaDB RAG — cutting latency from 40–80s to 10–20s.
+🔬 At the **Bioinformatics Lab at UF**, I designed a stacking ensemble (XGBoost + LightGBM + Balanced Random Forest) to classify T-cell receptor CDR3 sequences under severe class imbalance (1:23), and developed a biologically-informed data augmentation algorithm using the BLOSUM62 substitution matrix, expanding the minority class 10× — reaching 87.6% accuracy (ROC-AUC 0.876) and outperforming the best individual model (85%).
+
+🤖 On the project side, I built **CV Generator**, a JD-tailored résumé agent that combines hybrid retrieval (Chroma + BM25 with Reciprocal Rank Fusion), a LangGraph human-in-the-loop workflow, and an LLM supervisor that fact-checks every claim against source documents. I've also shipped two production versions of **cAIuldron** — an AI-powered recipe app where users photograph ingredients and receive complete recipes with AI-generated images. v1 used CLIP + DETR for ingredient detection and QLoRA fine-tuned Llama 3.2 1B; v2 was rebuilt as a cloud-native system with LangGraph orchestration, Groq Llama 4 Scout 17B for vision, and ChromaDB RAG — cutting latency from 40–80s to 10–20s.
 
 🚀 I also built **DARTS**, a campus mobility prediction system using a hybrid ARIMA-LSTM model that achieved 86.1% accuracy, reached national finals (Top 10 among 121 teams), and had its insights adopted by the university to optimize bus schedules.
 
@@ -72,17 +74,22 @@
 
 ## 💼 Work Experience
 
+### NVIDIA NeMo Automodel — Open-Source Contributor
+**May 2026 – Present | Open Source**
+- Contributed 2 merged PRs ([MiniCPM5-1B](https://github.com/NVIDIA-NeMo/Automodel/pull/2341), [Falcon H1](https://github.com/NVIDIA-NeMo/Automodel/pull/2334)) to NVIDIA's distributed LLM training library, adding 7 fine-tuning recipes (SFT, LoRA) for models from 0.5B to 34B
+- Configured LoRA hyperparameters (rank, alpha, target modules) and tensor parallelism for 34B-scale training; validated convergence on T4 GPU runs
+
 ### Florida Gators Women's Basketball — Data Scientist Intern
-**Aug 2025 – Present | Gainesville, FL**
-- Built OA-Rating player evaluation system using XGBoost and SHAP, analyzing 120K+ game-level observations across 5,500+ NCAA players and 350+ teams
-- Implemented Elo-based team rating system (ρ = 0.83 vs. NCAA NET) for real-time team strength tracking and game preparation
-- Developed production R Shiny dashboard for player comparison and opponent scouting; contributed to team improvement from NET 60 to NET 48
+**Aug 2025 – May 2026 | Gainesville, FL**
+- Replaced a manually-weighted player evaluation system with OA-Rating, an XGBoost + SHAP model validated against the legacy system (r = 0.78) across 120K+ observations, 5,500+ players, and 350+ teams
+- Built an Elo-based team rating system with 83% agreement with NCAA's official national rankings, and clustered teams into 4 tactical archetypes to support real-time game preparation and opponent scouting
+- Shipped a production R Shiny dashboard that contributed to the team's improvement from 60th nationally (16–17) to 48th nationally (18–15)
 
 ### Bioinformatics Lab, University of Florida — Student Research Assistant
-**Dec 2024 – Present | Gainesville, FL**
-- Designed stacking ensemble (XGBoost + LightGBM + Balanced Random Forest + logistic regression meta-learner) to classify 10,486 T-cell receptor CDR3 sequences, achieving ROC-AUC 0.876 on highly imbalanced data (1:23)
-- Developed biologically-informed data augmentation using BLOSUM62 substitution matrix, expanding minority class 10× (432 → 4,622) and improving class balance from 1:23 to 1:1.5
-- Engineered 42 physicochemical features and optimized decision thresholds, achieving precision of 0.716 for high-confidence predictions
+**Dec 2024 – May 2026 | Gainesville, FL**
+- Designed a stacking ensemble (XGBoost + LightGBM + Balanced Random Forest + logistic regression meta-learner) reaching 87.6% accuracy (ROC-AUC 0.876) in distinguishing brain- vs. blood-derived T-cell receptor CDR3 sequences, outperforming the best individual model (85%) on 10,486 sequences
+- Developed a biologically-informed data augmentation algorithm using the BLOSUM62 substitution matrix, generating conservative sequence variants to expand the minority class 10× (432 → 4,622) and mitigate severe class imbalance (1:23 → 1:1.5)
+- Engineered 42 physicochemical features from protein sequences and optimized decision thresholds under class imbalance, improving precision to 0.716 for high-confidence, interpretable predictions
 
 ### Glory Integrated Marketing Co. Ltd — Data Analyst Intern
 **Aug 2023 – Dec 2023 | Taipei, Taiwan**
@@ -90,10 +97,17 @@
 ## 🔍 Research Interests
 - **Sports Analytics:** Player evaluation, opponent modeling, game prediction
 - **Bioinformatics:** Sequence classification, imbalanced learning, feature engineering on biological data
-- **LLM & Generative AI:** RAG systems, fine-tuning, multi-modal pipelines, LangGraph orchestration
+- **LLM & Generative AI:** Fine-tuning (SFT, LoRA/QLoRA), distributed training, RAG systems, AI agents, multi-modal pipelines, LangGraph orchestration
 - **Predictive Modeling:** Time series analysis, ensemble methods, production ML systems
 
 ## 🚀 Featured Projects
+
+### [CV Generator](https://ckcinnabar.github.io/projects/cv-generate.html)
+**JD-Tailored Résumé Agent** | Gainesville, FL
+- Built a hybrid retrieval pipeline — dense embeddings (Chroma) + BM25, fused via Reciprocal Rank Fusion — with a Claude Haiku selector ranking the top-5 most relevant items per job description
+- Orchestrated via a LangGraph stateful graph with a human-in-the-loop interrupt for approval, and constrained Claude generation with hard-coded titles/dates to prevent hallucination
+- Built an LLM supervisor that fact-checks every claim against source documents, plus a render-retry loop (docx2pdf → pypdf) that shortens content until it fits one page
+- **Tech Stack:** Python, LangGraph, Claude API, ChromaDB, BM25, docx2pdf, pypdf
 
 ### [cAIuldron](https://ckcinnabar.github.io/projects/cauldron.html)
 **AI-Powered Recipe Generation App** | Gainesville, FL
@@ -113,5 +127,5 @@
 - 📧 Email: champion3.chen@gmail.com
 - 🌐 Portfolio: [ckcinnabar.github.io](https://ckcinnabar.github.io)
 - 💼 LinkedIn: [linkedin.com/in/kuan-chen-chen](https://www.linkedin.com/in/kuan-chen-chen/)
-- 📍 Location: Gainesville, FL
-- 🤝 Open to: ML Engineering Roles, Data Science Internships, Research Collaborations
+- 📍 Location: Hacienda Heights, CA
+- 🤝 Open to: Full-time ML Engineer, AI Engineer & Data Scientist Roles, Research Collaborations
