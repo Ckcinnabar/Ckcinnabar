@@ -102,6 +102,24 @@
 
 ## 🚀 Featured Projects
 
+### [Auto Job Apply](https://github.com/Ckcinnabar/auto-JOB-apply-docs)
+**Autonomous Job-Application Agent**
+- Built a Claude-powered browser agent (Playwright) that searches LinkedIn, screens each posting, and applies end to end — through LinkedIn Easy Apply and employer ATS sites (Workday, Greenhouse, Ashby, Oracle, SuccessFactors and more), including account creation, email verification, form filling, and résumé upload
+- Submitted 85 confirmed applications across 10+ ATS platforms in its first 4 days, averaging $0.23 in API cost per confirmed application
+- Designed cost-aware model routing: Claude Haiku screens postings (~$0.002 each) and fills forms, Claude Opus reviews employer-site forms against the candidate's data before submit and retries failed runs, with per-job and per-run spending caps
+- Ran up to 4 applications in parallel in separate Chrome windows with memory-aware scheduling and per-company locks; forms blocked by CAPTCHAs or site errors stay open for a person to finish instead of being refilled
+- Built an IMAP reader that classifies employer replies (confirmations, assessments, interview invitations, rejections) and matches them to applications, plus a desktop panel for progress, costs, and replies; credentials stay in Windows Credential Manager and are never sent to the model
+- **Tech Stack:** Python, Claude API, Playwright, FastAPI, Groq, SQLite, pywebview, Gradio, Chrome Extensions
+
+### [InterviewMate](https://github.com/Ckcinnabar/interviewmate)
+**Real-Time Interview Assistant** | Electron desktop app
+- Built an always-on-top overlay that transcribes live interview audio with AssemblyAI streaming speech-to-text (system audio, plus the candidate's microphone when enabled) and streams answers from Claude, starting automatically once the interviewer finishes a question
+- Kept answers consistent across an interview by sending the full multi-turn history with every request, and grounded experience questions in the candidate's own write-ups and résumé, with Claude Opus condensing PDFs into notes cached by content hash
+- Cut latency through model routing (Claude Haiku with thinking off for spoken questions, Claude Opus for on-screen coding problems) and prompt caching warmed at start: ~0.6 s to first word, ~1.2 s with ~62K tokens of context
+- Added screen and region capture for on-screen problems, English and Traditional Chinese modes (OpenCC conversion), and job-description parsing that steers answers toward the skills a role needs
+- Started as a fork of Open-Cluely; replaced Gemini/Ollama with Claude and trimmed it down to the interview workflow
+- **Tech Stack:** JavaScript, Node.js, Electron, Claude API, AssemblyAI, WebSockets, OpenCC
+
 ### [CV Generator](https://ckcinnabar.github.io/projects/cv-generate.html)
 **JD-Tailored Résumé Agent** | Gainesville, FL
 - Built a hybrid retrieval pipeline — dense embeddings (Chroma) + BM25, fused via Reciprocal Rank Fusion — with a Claude Haiku selector ranking the top-5 most relevant items per job description
